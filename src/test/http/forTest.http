@@ -1,0 +1,47 @@
+### 회원가입
+POST http://localhost:8085/auth/signup
+Content-Type: application/json
+
+{
+  "username": "grace",
+  "password": "grace123!@#",
+  "roles": ["ROLE_READ", "ROLE_WRITE"]
+}
+
+### 로그인
+POST http://localhost:8085/auth/signin
+Content-Type: application/json
+
+{
+  "username": "grace",
+  "password": "grace123!@#"
+}
+
+
+### size는 가져올 최대 content 개수, page는 0부터 시작 (Bearer 옆에 로그인 후 생성된 값을 입력해준다.)
+GET http://localhost:8085/company?size=2&page=0
+Authorization: Bearer
+
+### 예시로 넣을 수 있는 값들은
+### O(Realty Income Corporation), MMM(3M Company), COKE(Coca-Cola Consolidated, Inc.), DIA(SPDR Dow Jones Industrial Average ETF Trust) 등이 존재
+### (Bearer 옆에 로그인 후 생성된 값을 입력해준다.)
+POST http://localhost:8085/company
+Authorization: Bearer
+Content-Type: application/json
+
+{
+  "ticker": "MMM"
+}
+
+### 회사 이름 기반으로 배당금 정보 가져오기 (Bearer 옆에 로그인 후 생성된 값을 입력해준다.)
+GET http://localhost:8085/finance/dividend/3M Company
+Authorization: Bearer
+
+### keyword로 시작하는 회사 이름들 출력 (Bearer 옆에 로그인 후 생성된 값을 입력해준다.)
+GET http://localhost:8085/company/autocomplete?keyword=3M
+Authorization: Bearer
+
+### 해당 회사 정보 삭제 (Bearer 옆에 로그인 후 생성된 값을 입력해준다.)
+DELETE http://localhost:8085/company/MMM
+Authorization: Bearer
+
