@@ -1,417 +1,74 @@
-02:39:53.194 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:40:09.182 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:44:00.301 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:45:08.144 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 5
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:48:54.867 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:52:55.990 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:53:45.972 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:22 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316)
-	... 18 common frames omitted
-02:55:28.067 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316)
-	... 18 common frames omitted
-02:55:50.389 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316)
-	... 18 common frames omitted
-02:57:36.123 [main] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.dayone.Application.main(Application.java:22)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing class name for appender. Near [appender] line 6
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@7:18 - no applicable action for [encoder], current ElementPath  is [[configuration][appender][encoder]]
-ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:22 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][pattern]]
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [CONSOLE]. Did you define it below instead of above in the configuration file?
-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
-	... 18 common frames omitted
-02:59:12.618 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.16 on DESKTOP-SUJUFCL with PID 25876 (C:\Users\HomePC\IdeaProjects\sample\build\classes\java\main started by HomePC in C:\Users\HomePC\IdeaProjects\sample)
-02:59:12.621 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
-02:59:13.473 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-02:59:13.474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-02:59:13.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
-02:59:13.606 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-02:59:13.607 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-02:59:13.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-02:59:13.636 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-02:59:13.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-02:59:13.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-02:59:13.984 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a5bbaec' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-02:59:13.988 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-02:59:14.307 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
-02:59:14.317 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
-02:59:14.317 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-02:59:14.318 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
-02:59:14.468 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-02:59:14.469 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1802 ms
-02:59:14.505 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-02:59:14.624 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-02:59:14.630 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
-02:59:14.842 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-02:59:14.906 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
-02:59:15.071 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-02:59:15.227 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-02:59:16.099 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-02:59:16.114 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-02:59:16.692 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-02:59:17.123 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
-02:59:17.166 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62ff14cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@40fd1a78, org.springframework.security.web.header.HeaderWriterFilter@646c872a, org.springframework.security.web.authentication.logout.LogoutFilter@1f02b6d1, com.dayone.security.JwtAuthenticationFilter@4301fa39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24536f07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60f1f95b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ae6a77b, org.springframework.security.web.session.SessionManagementFilter@33425171, org.springframework.security.web.access.ExceptionTranslationFilter@14b4d90b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@394e504d]
-02:59:17.737 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
-02:59:17.755 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-02:59:17.771 [main] INFO  com.dayone.Application - Started Application in 5.697 seconds (JVM running for 6.966)
-03:05:12.149 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-03:05:12.152 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-03:05:12.155 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+01:06:29.351 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.16 on DESKTOP-SUJUFCL with PID 26352 (C:\Users\HomePC\IdeaProjects\HomeworkDividend\build\classes\java\main started by HomePC in C:\Users\HomePC\IdeaProjects\HomeworkDividend)
+01:06:29.360 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
+01:06:30.269 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+01:06:30.269 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:06:30.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+01:06:30.397 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+01:06:30.399 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+01:06:30.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:06:30.427 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:06:30.428 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:06:30.428 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+01:06:30.794 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e5fd2b1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:06:30.799 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:06:31.125 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+01:06:31.135 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+01:06:31.135 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:06:31.136 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+01:06:31.283 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:06:31.283 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1869 ms
+01:06:31.326 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:06:31.449 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:06:31.456 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+01:06:31.656 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+01:06:31.725 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+01:06:31.901 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+01:06:32.054 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+01:06:32.841 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:06:32.853 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:06:33.410 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:06:33.793 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+01:06:33.835 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d6745ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@75d402d4, org.springframework.security.web.header.HeaderWriterFilter@4c8afba, org.springframework.security.web.authentication.logout.LogoutFilter@2148b47e, com.dayone.security.JwtAuthenticationFilter@3d01ea33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3435a4e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b407336, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@600e2000, org.springframework.security.web.session.SessionManagementFilter@2ea0161f, org.springframework.security.web.access.ExceptionTranslationFilter@7022fb5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@591febcb]
+01:06:34.395 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+01:06:34.415 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+01:06:34.431 [main] INFO  com.dayone.Application - Started Application in 5.643 seconds (JVM running for 7.536)
+01:06:37.439 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:06:37.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:06:37.445 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+01:09:34.167 [main] INFO  com.dayone.Application - Starting Application using Java 11.0.16 on DESKTOP-SUJUFCL with PID 15692 (C:\Users\HomePC\IdeaProjects\HomeworkDividend\build\classes\java\main started by HomePC in C:\Users\HomePC\IdeaProjects\HomeworkDividend)
+01:09:34.171 [main] INFO  com.dayone.Application - No active profile set, falling back to default profiles: default
+01:09:35.045 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+01:09:35.045 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+01:09:35.159 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+01:09:35.173 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+01:09:35.175 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+01:09:35.199 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:09:35.200 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:09:35.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+01:09:35.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+01:09:35.537 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@18371d89' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:35.541 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:09:35.859 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+01:09:35.870 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+01:09:35.871 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:09:35.871 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+01:09:36.017 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:09:36.017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1792 ms
+01:09:36.055 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:09:36.175 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:09:36.181 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+01:09:36.373 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+01:09:36.437 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+01:09:36.603 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+01:09:36.762 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+01:09:37.548 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:09:37.560 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:09:38.102 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:09:38.483 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+01:09:38.532 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a95c2f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@20a18cc9, org.springframework.security.web.header.HeaderWriterFilter@15651402, org.springframework.security.web.authentication.logout.LogoutFilter@4027edeb, com.dayone.security.JwtAuthenticationFilter@566cc6af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fcf73b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f2ab6ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15d2ea6b, org.springframework.security.web.session.SessionManagementFilter@cae4952, org.springframework.security.web.access.ExceptionTranslationFilter@47f5ab58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@790f4933]
+01:09:39.078 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+01:09:39.097 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+01:09:39.113 [main] INFO  com.dayone.Application - Started Application in 5.574 seconds (JVM running for 6.886)
+01:09:42.904 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01:09:42.908 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:09:42.911 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
